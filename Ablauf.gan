@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="DigitalID" company="" webLink="http://" view-date="2017-12-05" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="2.8.5" locale="de_DE">
+    <description/>
+    <view zooming-state="default:0" id="gantt-chart">
+        <field id="tpd3" name="Vorgang" width="158" order="0"/>
+        <field id="tpd4" name="Anfang" width="62" order="1"/>
+        <field id="tpd5" name="Ende" width="61" order="2"/>
+        <option id="taskLabelUp" value="name"/>
+        <timeline><![CDATA[53,114,24,23,79,105]]></timeline>
+        <option id="color.recent"><![CDATA[#ff0033 #f4f4f4]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Ressource" width="210" order="0"/>
+        <field id="1" name="Rolle" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="" month="1" date="1" type="HOLIDAY"><![CDATA[New Years Day]]></date>
+        <date year="" month="1" date="6" type="HOLIDAY"><![CDATA[Epiphany]]></date>
+        <date year="" month="4" date="25" type="HOLIDAY"><![CDATA[Liberation Day]]></date>
+        <date year="" month="5" date="1" type="HOLIDAY"><![CDATA[Labor Day]]></date>
+        <date year="" month="6" date="2" type="HOLIDAY"><![CDATA[Republic Day]]></date>
+        <date year="" month="8" date="15" type="HOLIDAY"><![CDATA[Assumption Day]]></date>
+        <date year="" month="11" date="1" type="HOLIDAY"><![CDATA[All Saints Day]]></date>
+        <date year="" month="12" date="8" type="HOLIDAY"><![CDATA[Immaculate Conception Day]]></date>
+        <date year="" month="12" date="25" type="HOLIDAY"><![CDATA[Christmas Day]]></date>
+        <date year="" month="12" date="26" type="HOLIDAY"><![CDATA[St. Stephen's Day]]></date>
+        <date year="2005" month="3" date="28" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2006" month="4" date="17" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2007" month="4" date="9" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2008" month="3" date="24" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2009" month="4" date="13" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2010" month="4" date="5" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2011" month="4" date="25" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2012" month="4" date="9" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2013" month="4" date="1" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2014" month="4" date="21" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2015" month="4" date="6" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2016" month="3" date="28" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2017" month="4" date="17" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="24" name="Planung" color="#000000" meeting="false" start="2017-11-28" duration="9" complete="0" expand="true">
+            <task id="0" name="Planung und Definiton" color="#8cb6ce" meeting="false" start="2017-11-28" duration="2" complete="0" expand="true">
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="4" name="Detailplanug des Systems" color="#8cb6ce" meeting="false" start="2017-11-30" duration="7" complete="0" expand="true">
+                <depend id="11" type="2" difference="0" hardness="Strong"/>
+                <depend id="31" type="2" difference="0" hardness="Strong"/>
+                <depend id="54" type="2" difference="0" hardness="Strong"/>
+                <depend id="126" type="2" difference="0" hardness="Strong"/>
+                <depend id="152" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="31" name="Fertige Diagramme" color="#ff0033" meeting="true" start="2017-12-12" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="23" name="Datenbank" color="#000000" meeting="false" start="2017-12-12" duration="5" complete="0" expand="true">
+            <task id="11" name="Grobentwurf Datenbank" color="#8cb6ce" meeting="false" start="2017-12-12" duration="1" complete="0" expand="true">
+                <depend id="15" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="15" name="Feinentwurf Datenbank" color="#8cb6ce" meeting="false" start="2017-12-13" duration="1" complete="0" expand="true">
+                <depend id="40" type="2" difference="1" hardness="Strong"/>
+            </task>
+            <task id="40" name="Implementierung Datenbank" color="#8cb6ce" meeting="false" start="2017-12-15" duration="2" complete="0" expand="true">
+                <depend id="50" type="2" difference="0" hardness="Strong"/>
+                <depend id="70" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="50" name="Fertig Datenbank" color="#ff0033" meeting="true" start="2017-12-19" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="151" name="Hardware" meeting="false" start="2017-12-12" duration="3" complete="0" expand="true">
+            <task id="152" name="Planen Ausweiskarten" color="#8cb6ce" meeting="false" start="2017-12-12" duration="2" complete="0" expand="true">
+                <depend id="156" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="156" name="Kauf von benötigter Hardware" color="#8cb6ce" meeting="false" start="2017-12-14" duration="1" complete="0" expand="true">
+                <depend id="106" type="2" difference="0" hardness="Strong"/>
+                <depend id="134" type="2" difference="0" hardness="Strong"/>
+                <depend id="162" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="53" name="Backend Server" color="#000000" meeting="false" start="2017-12-12" duration="24" complete="0" expand="true">
+            <task id="54" name="Planung Backend Server" color="#8cb6ce" meeting="false" start="2017-12-12" duration="7" complete="0" expand="true">
+                <depend id="58" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="58" name="Implementierung Backend Server" color="#8cb6ce" meeting="false" start="2017-12-21" duration="12" complete="0" expand="true">
+                <depend id="70" type="2" difference="3" hardness="Strong"/>
+            </task>
+            <task id="70" name="Test Backend Server" color="#8cb6ce" meeting="false" start="2018-01-16" duration="2" complete="0" expand="true">
+                <depend id="76" type="2" difference="0" hardness="Strong"/>
+                <depend id="80" type="2" difference="0" hardness="Strong"/>
+                <depend id="207" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="76" name="Fertig Backend Server" color="#ff0033" meeting="true" start="2018-01-18" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="79" name="API" color="#000000" meeting="false" start="2018-01-18" duration="10" complete="0" expand="true">
+            <task id="80" name="Planung API" color="#8cb6ce" meeting="false" start="2018-01-18" duration="2" complete="0" expand="true">
+                <depend id="97" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="97" name="Implementierung API" color="#8cb6ce" meeting="false" start="2018-01-22" duration="8" complete="0" expand="true">
+                <depend id="101" type="2" difference="0" hardness="Strong"/>
+                <depend id="106" type="2" difference="0" hardness="Strong"/>
+                <depend id="134" type="2" difference="0" hardness="Strong"/>
+                <depend id="162" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="101" name="Fertig API" color="#ff0033" meeting="true" start="2018-02-01" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="105" name="Verwaltungsprogramm" color="#000000" meeting="false" start="2018-02-01" duration="38" complete="0" expand="true">
+            <task id="106" name="Planung Verwaltungsprogramm" color="#8cb6ce" meeting="false" start="2018-02-01" duration="3" complete="0" expand="true">
+                <depend id="114" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="114" name="Implementierung Verwaltungsprogramm" color="#8cb6ce" meeting="false" start="2018-02-06" duration="32" complete="0" expand="true">
+                <depend id="119" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="119" name="Test Verwaltungsprogramm" color="#8cb6ce" meeting="false" start="2018-03-22" duration="3" complete="0" expand="true">
+                <depend id="123" type="2" difference="0" hardness="Strong"/>
+                <depend id="213" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="123" name="Fertig Verwaltungsprogramm" color="#ff0033" meeting="true" start="2018-03-27" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="126" name="Erlernen Androidprogrammierung" color="#8cb6ce" meeting="false" start="2017-12-12" duration="9" complete="0" expand="true">
+            <depend id="134" type="2" difference="0" hardness="Strong"/>
+            <depend id="162" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="133" name="Anwenderprogramm" meeting="false" start="2018-02-01" duration="25" complete="0" expand="true">
+            <task id="134" name="Planung Anwenderprogramm" color="#8cb6ce" meeting="false" start="2018-02-01" duration="3" complete="0" expand="true">
+                <depend id="139" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="139" name="Implementierung Anwenderprogramm" color="#8cb6ce" meeting="false" start="2018-02-06" duration="18" complete="0" expand="true">
+                <depend id="144" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="144" name="Test Anwenderprogramm" color="#8cb6ce" meeting="false" start="2018-03-02" duration="4" complete="0" expand="true">
+                <depend id="148" type="2" difference="0" hardness="Strong"/>
+                <depend id="213" type="2" difference="7" hardness="Strong"/>
+            </task>
+            <task id="148" name="Fertig Anwenderprogramm" color="#ff0033" meeting="true" start="2018-03-08" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="161" name="Spezialsoftware" color="#000000" meeting="false" start="2018-02-01" duration="37" complete="0" expand="true">
+            <task id="162" name="Planung Spezialsoftware" color="#8cb6ce" meeting="false" start="2018-02-01" duration="3" complete="0" expand="true">
+                <depend id="197" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="197" name="Implementierung Spezialsoftware" color="#8cb6ce" meeting="false" start="2018-02-06" duration="29" complete="0" expand="true">
+                <depend id="201" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="201" name="Test Spezialsoftware" color="#8cb6ce" meeting="false" start="2018-03-19" duration="5" complete="0" expand="true">
+                <depend id="213" type="2" difference="7" hardness="Strong"/>
+                <depend id="218" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="218" name="Fertig Spezialsoftware" color="#ff0033" meeting="true" start="2018-03-26" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="205" name="Server in der Cloud" meeting="false" start="2018-01-18" duration="2" complete="0" expand="true">
+            <task id="207" name="Mieten Server" color="#8cb6ce" meeting="false" start="2018-01-18" duration="1" complete="0" expand="true">
+                <depend id="210" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="210" name="Einrichten Server" color="#8cb6ce" meeting="false" start="2018-01-19" duration="1" complete="0" expand="true">
+                <depend id="213" type="2" difference="7" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="213" name="Installation von Projekt" color="#8cb6ce" meeting="false" start="2018-04-04" duration="1" complete="0" expand="true">
+            <depend id="228" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="228" name="Test von Projekt" color="#8cb6ce" meeting="false" start="2018-04-05" duration="10" complete="0" expand="true">
+            <depend id="234" type="2" difference="0" hardness="Strong"/>
+            <depend id="249" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="249" name="Fertig Projekt" color="#ff0033" meeting="true" start="2018-04-19" duration="0" complete="0" expand="true"/>
+        <task id="232" name="Dokumentation schreiben" color="#8cb6ce" meeting="false" start="2017-11-28" duration="16" complete="0" expand="true">
+            <depend id="234" type="2" difference="0" hardness="Strong"/>
+            <depend id="242" type="2" difference="80" hardness="Strong"/>
+        </task>
+        <task id="242" name="Fertig Dokumentation" color="#ff0033" meeting="true" start="2018-04-17" duration="0" complete="0" expand="true"/>
+        <task id="234" name="Präsentation machen" color="#8cb6ce" meeting="false" start="2018-04-19" duration="6" complete="0" expand="true">
+            <depend id="253" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="253" name="Abschluss Projekt" color="#ff0033" meeting="true" start="2018-04-30" duration="0" complete="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Kritzinger Simon" function="Default:1" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="4" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="15" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="40" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="70" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="97" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="126" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>

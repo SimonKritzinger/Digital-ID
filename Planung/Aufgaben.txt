@@ -1,0 +1,37 @@
+01. Planung und Definition
+02. Detailplanung des Systems(UML-Diagramme und Zeichnung der Beziehungen der Systeme untereinander)
+03. Grobentwurf Datenbank
+04. Feinentwurf    " 
+05. Implemtierung   "
+06. Planung des Back-end Server
+07. Implentierung  "      "
+08. Test Datenbank und Backend
+
+28. Planung API 
+29. Implementation API
+
+09. Planung Verwaltungssoftware
+10. Erlernen von Androidprogrammierung
+10. Planung Anwendersoftware
+11. Planung Spezialsoftware
+12. Grobentwurf Datenbank Spezialsoftware
+13. Feinentwurf Datenbank Spezialsoftware
+14. Implentierung Datenbank Spezialsoftware
+15. Implementierung Verwaltungssoftware
+16. Implementierung Anwendersoftware
+17. Implementierung Spezialsoftware
+18. Test Verwaltungssoftware
+19. Test Anwendersoftware
+20. Test Spezialsoftware
+
+21. Einrichtung Cloud-Server für Datenbank und Backend
+22. Cloud-Server Installation
+
+23. Desing der NFC-Karten
+24. Kauf von Karten und Lesegerät
+
+25. Installation von gesamten System
+26. Test und Fehlerbehebung
+
+27. Projekt Dokumentation schreiben
+30. Präsentation
