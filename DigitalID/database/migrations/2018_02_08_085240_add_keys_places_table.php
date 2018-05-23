@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddKeysUsersTable extends Migration
+class AddKeysPlacesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class AddKeysUsersTable extends Migration
      */
     public function up()
     {
-        Schema::table("users",function(Blueprint $table){
-            $table->foreign("citizen")
-                ->references("c_id")->on("citizen")
+        Schema::table("places",function(Blueprint $table){
+            $table->foreign("province")
+                ->references("pr_id")->on("provinces")
                 ->onUpdate("cascade")
                 ->onDelete("restrict");
-            $table->unique(['citizen','role']);
+
         });
     }
 
@@ -29,9 +29,8 @@ class AddKeysUsersTable extends Migration
      */
     public function down()
     {
-        Schema::table("users",function(Blueprint $table){
-            $table->dropForeign("users_citizen_foreign");
-
+        Schema::table("places",function(Blueprint $table){
+            $table->dropForeign("places_province_foreign");
         });
     }
 }
