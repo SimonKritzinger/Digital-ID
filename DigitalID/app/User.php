@@ -11,10 +11,14 @@ class User extends Authenticatable
 {
     protected $table="users";
 
-    protected $primaryKey="unummer";
+    protected $primaryKey="u_id";
 
     public $timestamps=true;
 
     use HasApiTokens, Notifiable;
+
+    public function Citizen(){
+        return $this->$this->belongsTo("App\Citizen","citizen","c_id");
+    }
 
 }

@@ -14,11 +14,11 @@ class AddKeysUsersTable extends Migration
     public function up()
     {
         Schema::table("users",function(Blueprint $table){
-            $table->foreign("bnummer")
-                ->references("bnummer")->on("buerger")
+            $table->foreign("citizen")
+                ->references("c_id")->on("citizen")
                 ->onUpdate("cascade")
                 ->onDelete("restrict");
-            $table->unique(['bnummer','urolle']);
+            $table->unique(['citizen','role']);
         });
     }
 
@@ -30,8 +30,8 @@ class AddKeysUsersTable extends Migration
     public function down()
     {
         Schema::table("users",function(Blueprint $table){
-            $table->dropForeign("users_bnummer_foreign");
-            $table->dropUnique("users_bnummer_urolle_unique");
+            $table->dropForeign("users_citizen_foreign");
+
         });
     }
 }

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="759.0" prefWidth="1169.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kritzinger.gui.MainWindowController">
+   <top>
+      <VBox fx:id="header" prefHeight="73.0" prefWidth="1169.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar fx:id="menuBar">
+              <menus>
+                <Menu fx:id="fileMenu" mnemonicParsing="false" text="Datei">
+                  <items>
+                    <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" text="Schließen" />
+                  </items>
+                </Menu>
+                <Menu fx:id="editMenu" mnemonicParsing="false" text="Bearbeiten" />
+                <Menu fx:id="helpMenu" mnemonicParsing="false" text="Hilfe">
+                  <items>
+                    <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" text="Über..." />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <ToolBar fx:id="toolBar" prefHeight="47.0" prefWidth="1169.0">
+               <items>
+                  <Button fx:id="newButton" mnemonicParsing="false" prefHeight="31.0" prefWidth="54.0" text="Neu">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="showButton" disable="true" mnemonicParsing="false" onAction="#showCitizenClick" text="Anzeigen">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="editButton" disable="true" mnemonicParsing="false" prefHeight="31.0" prefWidth="88.0" text="Bearbeiten">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Separator orientation="VERTICAL" prefHeight="0.0" prefWidth="0.0" />
+                  <Label text="Ausweis:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="newCardButton" disable="true" mnemonicParsing="false" text="Neu">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="deleteCardButton" disable="true" mnemonicParsing="false" text="Entfernen">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Separator orientation="VERTICAL" prefHeight="0.0" prefWidth="0.0" />
+                  <Label text="Konto:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="showAccountButton" disable="true" mnemonicParsing="false" text="Anzeigen">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="newAccountButton" disable="true" mnemonicParsing="false" text="Neu">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </items></ToolBar>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <SplitPane fx:id="mainPane" dividerPositions="0.2" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane fx:id="searchPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane fx:id="searchPaneMain" dividerPositions="0.3878437047756874" orientation="VERTICAL" prefHeight="644.0" prefWidth="230.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="95.0" prefWidth="161.0">
+                           <children>
+                              <Accordion fx:id="searchOptionPane" layoutX="-23.0" layoutY="-6.0" prefHeight="135.0" prefWidth="123.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="-23.0" AnchorPane.rightAnchor="-23.0" AnchorPane.topAnchor="-6.0">
+                                <panes>
+                                  <TitledPane animated="false" text="Mit Namen suchen">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox layoutX="35.0" layoutY="19.0" prefHeight="108.0" prefWidth="226.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <TextField fx:id="searchNameField" promptText="Vorname" />
+                                                      <TextField fx:id="searchLastnameField" promptText="Nachname" />
+                                                      <AnchorPane prefHeight="27.0" prefWidth="202.0">
+                                                         <children>
+                                                            <Button fx:id="searchByNameButton" defaultButton="true" layoutY="-1.0" mnemonicParsing="false" onAction="#searchByNameClick" prefHeight="31.0" prefWidth="202.0" text="Suche" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </TitledPane>
+                                  <TitledPane fx:id="searchByTaxIdPanel" animated="false" text="Mit Steuernummer suchen">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox layoutX="42.0" layoutY="-11.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="-0.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="-0.0">
+                                                   <children>
+                                                      <TextField fx:id="searchTaxIdField" promptText="Steuernummer" />
+                                                      <AnchorPane prefHeight="29.0" prefWidth="193.0">
+                                                         <children>
+                                                            <Button fx:id="searchByTaxIdButton" defaultButton="true" mnemonicParsing="false" onAction="#searchByTaxIdClick" text="Suche" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </TitledPane>
+                                  <TitledPane animated="false" text="Mit Karte suchen">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                    </content>
+                                  </TitledPane>
+                                </panes>
+                              </Accordion>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane fx:id="searchResultPane" minHeight="0.0" minWidth="0.0" prefHeight="191.0" prefWidth="175.0">
+                           <children>
+                              <ListView fx:id="searchResultList" layoutY="-1.0" onMouseClicked="#searchResultListClick" prefHeight="232.0" prefWidth="117.0" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="-1.0">
+                                 <contextMenu>
+                                    <ContextMenu fx:id="citizenContextMenu" onShowing="#citizenContextMenuOpen">
+                                      <items>
+                                          <MenuItem fx:id="newContext" mnemonicParsing="false" text="Neu" />
+                                        <MenuItem fx:id="showContext" mnemonicParsing="false" onAction="#showCitizenClick" text="Anzeigen" />
+                                          <MenuItem fx:id="changeContext" mnemonicParsing="false" text="Bearbeiten" />
+                                          <Menu fx:id="idContextMenu" mnemonicParsing="false" text="Ausweis">
+                                            <items>
+                                                <MenuItem fx:id="idDeleteContext" mnemonicParsing="false" text="Entfernen" />
+                                                <MenuItem fx:id="idAddContext" mnemonicParsing="false" text="Hinzufügen" />
+                                            </items>
+                                          </Menu>
+                                          <Menu fx:id="accountContextMenu" mnemonicParsing="false" text="Konto">
+                                            <items>
+                                              <MenuItem fx:id="accountShowContext" mnemonicParsing="false" text="Anzeigen" />
+                                                <MenuItem fx:id="accountAddContext" mnemonicParsing="false" text="Hinzufügen" />
+                                            </items>
+                                          </Menu>
+                                      </items>
+                                    </ContextMenu>
+                                 </contextMenu></ListView>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="contentPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+        </items>
+      </SplitPane>
+   </center>
+   <bottom>
+      <HBox prefHeight="35.0" prefWidth="1169.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="DigitalId" />
+         </children>
+         <padding>
+            <Insets top="8.0" />
+         </padding></HBox>
+   </bottom>
+</BorderPane>
